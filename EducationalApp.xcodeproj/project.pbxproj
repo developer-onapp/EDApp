@@ -13,6 +13,8 @@
 		B5637BB3264E81F100E9CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB1264E81F100E9CB04 /* Main.storyboard */; };
 		B5637BB5264E81F200E9CB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB4264E81F200E9CB04 /* Assets.xcassets */; };
 		B5637BB8264E81F200E9CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB6264E81F200E9CB04 /* LaunchScreen.storyboard */; };
+		B59FA550265520C500CBB1F4 /* ToadyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */; };
+		B59FA5522655314000CBB1F4 /* CoursesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FA5512655314000CBB1F4 /* CoursesCollection.swift */; };
 		B5A1E1D92654B8B8002F422E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1E1D82654B8B8002F422E /* SignInViewController.swift */; };
 		B5A2504B2654210A005D19C9 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A2504A2654210A005D19C9 /* UIUtilities.swift */; };
 		B5A2504E265428B4005D19C9 /* shortAvVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5A2504D265428B4005D19C9 /* shortAvVideo.mp4 */; };
@@ -37,6 +39,8 @@
 		B5637BB4264E81F200E9CB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5637BB7264E81F200E9CB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5637BB9264E81F200E9CB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadyTabBarViewController.swift; sourceTree = "<group>"; };
+		B59FA5512655314000CBB1F4 /* CoursesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollection.swift; sourceTree = "<group>"; };
 		B5A1E1D82654B8B8002F422E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B5A2504A2654210A005D19C9 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		B5A2504D265428B4005D19C9 /* shortAvVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = shortAvVideo.mp4; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			children = (
 				B5A2505526544938005D19C9 /* StudentsCollection.swift */,
 				B5A2505726544FCA005D19C9 /* K.swift */,
+				B59FA5512655314000CBB1F4 /* CoursesCollection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				B5637BAF264E81F100E9CB04 /* WelcomePageViewController.swift */,
 				B5A2505126543E88005D19C9 /* SignUpViewController.swift */,
 				B5A1E1D82654B8B8002F422E /* SignInViewController.swift */,
+				B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,10 +301,12 @@
 				B5637BAC264E81F100E9CB04 /* AppDelegate.swift in Sources */,
 				B5A2504B2654210A005D19C9 /* UIUtilities.swift in Sources */,
 				B5637BAE264E81F100E9CB04 /* SceneDelegate.swift in Sources */,
+				B59FA5522655314000CBB1F4 /* CoursesCollection.swift in Sources */,
 				B5A2505226543E88005D19C9 /* SignUpViewController.swift in Sources */,
 				B5A1E1D92654B8B8002F422E /* SignInViewController.swift in Sources */,
 				B5A2505826544FCA005D19C9 /* K.swift in Sources */,
 				B5A2505626544938005D19C9 /* StudentsCollection.swift in Sources */,
+				B59FA550265520C500CBB1F4 /* ToadyTabBarViewController.swift in Sources */,
 				B5A250542654402D005D19C9 /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

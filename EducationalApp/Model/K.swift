@@ -18,8 +18,9 @@ struct K {
         }
     }
     
-    struct Storyboard {
+    struct SB {
         static let signUpStoryboard: String = "signUpStoryboard"
         static let signInStoryboard: String = "signInStoryboard"
+        static let mainTabVC: String = "mainTabVC"
     }
 }

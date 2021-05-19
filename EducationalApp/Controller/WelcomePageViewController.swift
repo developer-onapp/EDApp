@@ -37,13 +37,13 @@ class WelcomePageViewController: UIViewController {
     @IBAction func signinBtnTapped(_ sender: UIButton) {
         
         print("sign in presed")
-        let signInVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.Storyboard.signInStoryboard) as? SignInViewController
+        let signInVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.SB.signInStoryboard) as? SignInViewController
         self.present(signInVC!, animated: true, completion: nil)
         
     }
     
     @IBAction func signupBtnTapped(_ sender: UIButton) {
-        let signUpVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.Storyboard.signUpStoryboard) as? SignUpViewController
+        let signUpVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.SB.signUpStoryboard) as? SignUpViewController
         self.present(signUpVC!, animated: true, completion: nil)
         print("sign up presed")
     }
