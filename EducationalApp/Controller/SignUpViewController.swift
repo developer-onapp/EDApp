@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestoreSwift
 
 class SignUpViewController: UIViewController {
     
@@ -25,6 +26,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var warningLabel: UILabel!
     
     // Variables
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,24 +46,61 @@ class SignUpViewController: UIViewController {
         if warningMessage == nil {
             
             // TODO:-
-//            checkUserSignUpBefore()
+            //            checkUserSignUpBefore()
             registerUser()
         }
         
         
-      
+        
     }
     
 }
 
+// MARK:  Register
+extension SignUpViewController {
+    // TODO:- <##>
+    func checkUserSignUpBefore() {
+        
+    }
+    
+    func registerUser() {
+        
+        // Provide info to object od Students
+        let newStudent = StudentsCollection(firstName: firstNameTextField.text!, lastName: lastNameTextField.text, idNumber: icOrPassportTextField.text, email: emailTextFiled.text, password: passwordTextField.text, lastUpdate: Data())
+        
+        // Register in Firestore
+        do {
+            try db.collection(K.DB.StudentsCollection).document(emailTextFiled.text!).setData(from: newStudent)
+            print("succestfult to firestore")
+        } catch let error {
+            print("writing to db", error)
+        }
+        // Register in Auth
+        Auth.auth().createUser(withEmail: emailTextFiled.text!, password: passwordTextField.text!) { [weak self] authResult, err in
+            guard err == nil, authResult != nil else {self!.showWarning(); return}
+            guard let strongSelf = self else {return}
+            
+            // TODO:- later work send to new view controller
+            
+            print("user Sign up Successfully")
+            
+            print(strongSelf.emailTextFiled.text!)
+
+            
+            // TODO:- keep user sign in
+        }
+        
+    }
+    
+}
 // MARK:  Helper Functions
 extension SignUpViewController {
     
     func setUpElements() {
         UIUtilities.styleFilledButton(registerBtn)
-            
-            
-        }
+        
+        
+    }
     func validateFields() -> String? {
         
         if firstNameTextField.text == "", lastNameTextField.text == "", icOrPassportTextField.text == "", emailTextFiled.text == "", passwordTextField.text == "", confirmPasswordTextField.text == "" {
@@ -71,26 +110,13 @@ extension SignUpViewController {
         return nil
     }
     
-    // TODO:- <##>
-    func checkUserSignUpBefore() {
-        
-    }
-    
-    func registerUser() {
-        let db = Firestore.firestore()
-        let newStudent = Student(firstName: firstNameTextField.text!, lastName: lastNameTextField.text, idNumber: icOrPassportTextField.text, email: emailTextFiled.text, password: passwordTextField.text)
-//        do {
-//            try db.collection("cities").document("LA").setData(newStudent)
-//        } catch let error {
-//            print("Error writing city to Firestore: \(error)")
-//        }
-//        
-//        do {
-//        try db.collection(K.DB.StudentsCollection).document(emailTextFiled.text!).setdata
-//        } catch let error {
-//            print("writing to db", error)
-//        }
-
-
+    func showWarning() {
+        warningLabel.isHidden = false
+        warningLabel.text = "Coudn't register"
     }
 }
+
+
+
+
+

@@ -10,11 +10,16 @@ import Foundation
 
 struct K {
     struct DB {
-        static let StudentsCollection: String = "Students"
-        static let CoursesCollection: String = "Courses<##>"
+        static let StudentsCollection: String = "StudentsCollection"
+        static let CoursesCollection: String = "CoursesCollection<##>"
         
         struct Student {
             
         }
+    }
+    
+    struct Storyboard {
+        static let signUpStoryboard: String = "signUpStoryboard"
+        static let signInStoryboard: String = "signInStoryboard"
     }
 }

@@ -28,16 +28,24 @@ class WelcomePageViewController: UIViewController {
     
     
     override func viewWillAppear(_ animated: Bool) {
-        setUpVideo()
+        
+        // TODO:- make later active video
+//        setUpVideo()
     }
     
     // Actions
     @IBAction func signinBtnTapped(_ sender: UIButton) {
         
-
+        print("sign in presed")
+        let signInVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.Storyboard.signInStoryboard) as? SignInViewController
+        self.present(signInVC!, animated: true, completion: nil)
+        
     }
     
     @IBAction func signupBtnTapped(_ sender: UIButton) {
+        let signUpVC = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.Storyboard.signUpStoryboard) as? SignUpViewController
+        self.present(signUpVC!, animated: true, completion: nil)
+        print("sign up presed")
     }
 }
 

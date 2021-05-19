@@ -3,4 +3,70 @@
    uuid = "7E92C34F-C1E8-4F90-9D63-58E805A41D67"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C6B39A8-86BE-434E-9B93-ED695AC071E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationalApp/Controller/SignUpViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "registerUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2CB3722-0780-4652-BFB5-7D835F851835"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationalApp/Controller/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "signInUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D2CB3722-0780-4652-BFB5-7D835F851835 - f6e5788edca99718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EducationalApp.SignInViewController.signInUser() -&gt; ()"
+                  moduleName = "EducationalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Rep/MyRep/App%20Development/EducationalApp/EducationalApp/Controller/SignInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "D2CB3722-0780-4652-BFB5-7D835F851835 - b5739e39a22d33d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EducationalApp.SignInViewController.signInUser() -&gt; ()"
+                  moduleName = "EducationalApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Rep/MyRep/App%20Development/EducationalApp/EducationalApp/Controller/SignInViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "163">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
