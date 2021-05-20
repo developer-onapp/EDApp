@@ -13,6 +13,11 @@
 		B5637BB3264E81F100E9CB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB1264E81F100E9CB04 /* Main.storyboard */; };
 		B5637BB5264E81F200E9CB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB4264E81F200E9CB04 /* Assets.xcassets */; };
 		B5637BB8264E81F200E9CB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5637BB6264E81F200E9CB04 /* LaunchScreen.storyboard */; };
+		B58462B326567A54005C9AF6 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58462B226567A54005C9AF6 /* MainTabBarViewController.swift */; };
+		B58462B5265682B1005C9AF6 /* CalendarTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58462B4265682B1005C9AF6 /* CalendarTabBarViewController.swift */; };
+		B58462B726568304005C9AF6 /* TaskListsTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58462B626568304005C9AF6 /* TaskListsTabBarViewController.swift */; };
+		B58462B926568313005C9AF6 /* CollegeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58462B826568313005C9AF6 /* CollegeTabBarViewController.swift */; };
+		B58462BB26568F3B005C9AF6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58462BA26568F3B005C9AF6 /* ProfileViewController.swift */; };
 		B59FA550265520C500CBB1F4 /* ToadyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */; };
 		B59FA5522655314000CBB1F4 /* CoursesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59FA5512655314000CBB1F4 /* CoursesCollection.swift */; };
 		B5A1E1D92654B8B8002F422E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1E1D82654B8B8002F422E /* SignInViewController.swift */; };
@@ -39,6 +44,11 @@
 		B5637BB4264E81F200E9CB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5637BB7264E81F200E9CB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5637BB9264E81F200E9CB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58462B226567A54005C9AF6 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		B58462B4265682B1005C9AF6 /* CalendarTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTabBarViewController.swift; sourceTree = "<group>"; };
+		B58462B626568304005C9AF6 /* TaskListsTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListsTabBarViewController.swift; sourceTree = "<group>"; };
+		B58462B826568313005C9AF6 /* CollegeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeTabBarViewController.swift; sourceTree = "<group>"; };
+		B58462BA26568F3B005C9AF6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadyTabBarViewController.swift; sourceTree = "<group>"; };
 		B59FA5512655314000CBB1F4 /* CoursesCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollection.swift; sourceTree = "<group>"; };
 		B5A1E1D82654B8B8002F422E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +153,12 @@
 				B5637BAF264E81F100E9CB04 /* WelcomePageViewController.swift */,
 				B5A2505126543E88005D19C9 /* SignUpViewController.swift */,
 				B5A1E1D82654B8B8002F422E /* SignInViewController.swift */,
+				B58462B226567A54005C9AF6 /* MainTabBarViewController.swift */,
 				B59FA54F265520C500CBB1F4 /* ToadyTabBarViewController.swift */,
+				B58462B4265682B1005C9AF6 /* CalendarTabBarViewController.swift */,
+				B58462B626568304005C9AF6 /* TaskListsTabBarViewController.swift */,
+				B58462B826568313005C9AF6 /* CollegeTabBarViewController.swift */,
+				B58462BA26568F3B005C9AF6 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -303,11 +318,16 @@
 				B5637BAE264E81F100E9CB04 /* SceneDelegate.swift in Sources */,
 				B59FA5522655314000CBB1F4 /* CoursesCollection.swift in Sources */,
 				B5A2505226543E88005D19C9 /* SignUpViewController.swift in Sources */,
+				B58462BB26568F3B005C9AF6 /* ProfileViewController.swift in Sources */,
 				B5A1E1D92654B8B8002F422E /* SignInViewController.swift in Sources */,
 				B5A2505826544FCA005D19C9 /* K.swift in Sources */,
 				B5A2505626544938005D19C9 /* StudentsCollection.swift in Sources */,
+				B58462B326567A54005C9AF6 /* MainTabBarViewController.swift in Sources */,
+				B58462B926568313005C9AF6 /* CollegeTabBarViewController.swift in Sources */,
 				B59FA550265520C500CBB1F4 /* ToadyTabBarViewController.swift in Sources */,
 				B5A250542654402D005D19C9 /* HelperFunctions.swift in Sources */,
+				B58462B5265682B1005C9AF6 /* CalendarTabBarViewController.swift in Sources */,
+				B58462B726568304005C9AF6 /* TaskListsTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

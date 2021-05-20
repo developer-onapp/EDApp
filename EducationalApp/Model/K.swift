@@ -22,5 +22,9 @@ struct K {
         static let signUpStoryboard: String = "signUpStoryboard"
         static let signInStoryboard: String = "signInStoryboard"
         static let mainTabVC: String = "mainTabVC"
+        
+        // ItemBars VC StoryBorad
+        static let ToadyTabBarViewController: String = "ToadyTabBarViewController"
+        
     }
 }

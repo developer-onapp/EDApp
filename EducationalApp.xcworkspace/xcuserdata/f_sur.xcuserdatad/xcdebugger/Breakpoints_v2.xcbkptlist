@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
             endingLineNumber = "72"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "registerUser()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,13 +30,29 @@
             filePath = "EducationalApp/Controller/SignInViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "signInUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B613C98F-5B3B-4265-B38C-EAA76B3FE820"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EducationalApp/Controller/SignInViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
             landmarkName = "signInUser()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "D2CB3722-0780-4652-BFB5-7D835F851835 - f6e5788edca99718"
+                  uuid = "B613C98F-5B3B-4265-B38C-EAA76B3FE820 - f6e5788edca99718"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -51,7 +67,7 @@
                   offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "D2CB3722-0780-4652-BFB5-7D835F851835 - b5739e39a22d33d5"
+                  uuid = "B613C98F-5B3B-4265-B38C-EAA76B3FE820 - b5739e39a22d33d5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -63,7 +79,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "56"
                   endingLineNumber = "56"
-                  offsetFromSymbolStart = "163">
+                  offsetFromSymbolStart = "194">
                </Location>
             </Locations>
          </BreakpointContent>

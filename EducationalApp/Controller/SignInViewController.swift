@@ -54,7 +54,7 @@ extension SignInViewController {
     func signInUser() {
         // Check & Sign In User
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { [weak self] authResult, error in
-            guard  error != nil else { print(error?.localizedDescription); return }
+            guard  error != nil else { print(error?.localizedDescription as Any); return }
             guard let strongSelf = self else { print("not find self"); return}
 
             
@@ -62,9 +62,11 @@ extension SignInViewController {
             print("user Sign in Successfully")
             print(Auth.auth().currentUser?.email)
             
-            let mainTabVc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: K.SB.mainTabVC) as? 
-            
-            
+            let mainTabVc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: K.SB.mainTabVC)  as? UITabBarController
+            print(mainTabVc)
+            mainTabVc?.modalPresentationStyle = .fullScreen
+            mainTabVc?.hidesBottomBarWhenPushed = true
+            strongSelf.present(mainTabVc!, animated: true, completion: nil)
             // TODO:- keep user sign in
         }
         

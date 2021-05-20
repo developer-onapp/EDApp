@@ -12,6 +12,7 @@ target 'EducationalApp' do
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
     pod 'FirebaseFirestoreSwift'
+    pod 'RealmS'
 
 
 end
